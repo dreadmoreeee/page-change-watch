@@ -1,0 +1,28 @@
+{
+  "defaults": {
+    "ignore": ["Visitors today: \\d+"]
+  },
+  "pages": [
+    {
+      "name": "competitor-pricing",
+      "url": "https://competitor.example/pricing",
+      "selector": "main .pricing-table"
+    },
+    {
+      "name": "terms",
+      "url": "https://www.example.com/legal/terms",
+      "ignore": ["Reference #\\w+"]
+    },
+    {
+      "name": "my-home-after-deploy",
+      "url": "https://www.example.com/",
+      "render": true
+    },
+    {
+      "id": "opening-hours",
+      "url": "https://www.example.com/contact",
+      "selector": "#hours",
+      "default_ignore": false
+    }
+  ]
+}

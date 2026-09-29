@@ -1,0 +1,13 @@
+# Real-world demo watch list (used for "Measured result" in the README).
+defaults:
+  render: false
+
+pages:
+  - name: demarkstudio
+    url: https://demarkstudio.ca
+
+  - name: riverside-pub
+    url: https://demo.demarkstudio.ca/riverside-pub/site
+
+  - name: portfolio
+    url: https://marvin.demarkstudio.ca

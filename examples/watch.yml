@@ -1,0 +1,23 @@
+# page-change-watch watch list (YAML needs PyYAML; see watch.json for the JSON form)
+defaults:
+  ignore:                      # regexes removed from every page (added to the built-in filters)
+    - 'Visitors today: \d+'
+
+pages:
+  - name: competitor-pricing
+    url: https://competitor.example/pricing
+    selector: "main .pricing-table"      # only watch the price table
+
+  - name: terms
+    url: https://www.example.com/legal/terms
+    ignore:
+      - 'Reference #\w+'
+
+  - name: my-home-after-deploy
+    url: https://www.example.com/
+    render: true                          # JavaScript-built page: use headless Chromium
+
+  - id: opening-hours
+    url: https://www.example.com/contact
+    selector: "#hours"
+    default_ignore: false                 # keep times like 10:00 (built-in filters would hide them)

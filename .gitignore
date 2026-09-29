@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+.pytest_cache/
+.page-change-watch/
+examples/.demo-store/
+examples/.local-demo-store/
